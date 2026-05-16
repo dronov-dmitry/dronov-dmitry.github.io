@@ -1,0 +1,11 @@
+# Robots.txt for https://dronov-dmitry.github.io/
+# Last updated: 2026-05-16
+
+# Allow all bots to crawl and index
+User-agent: *
+Allow: /
+Allow: /about.html
+Allow: /index_germ.html
+
+# Sitemap location
+Sitemap: https://dronov-dmitry.github.io/sitemap.xml

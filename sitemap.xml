@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- ===== Main landing page (multi-language) ===== -->
+  <url>
+    <loc>https://dronov-dmitry.github.io/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dronov-dmitry.github.io/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://dronov-dmitry.github.io/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dronov-dmitry.github.io/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://dronov-dmitry.github.io/index_germ.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dronov-dmitry.github.io/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://dronov-dmitry.github.io/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://dronov-dmitry.github.io/" />
+  </url>
+
+  <!-- ===== German landing page (geo-redirect target) ===== -->
+  <url>
+    <loc>https://dronov-dmitry.github.io/index_germ.html</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dronov-dmitry.github.io/index_germ.html" />
+  </url>
+
+  <!-- ===== About page (rich content, link bait) ===== -->
+  <url>
+    <loc>https://dronov-dmitry.github.io/about.html</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>

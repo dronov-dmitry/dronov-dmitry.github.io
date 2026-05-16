@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dronov Dmitry</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --accent: #60a5fa;
+      --accent-2: #22d3ee;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: radial-gradient(900px 500px at 10% 10%, #1f2937, var(--bg));
+      color: var(--text);
+      font: 16px/1.5 "Segoe UI", Arial, sans-serif;
+    }
+    .card {
+      width: min(980px, 92vw);
+      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+      border: 1px solid rgba(148,163,184,0.2);
+      border-radius: 16px;
+      padding: 28px 32px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    }
+    .header {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 20px;
+      align-items: center;
+      margin-bottom: 18px;
+    }
+    .photo {
+      width: 140px;
+      height: 140px;
+      border-radius: 16px;
+      object-fit: cover;
+      border: 1px solid rgba(148,163,184,0.2);
+      background: rgba(15,23,42,0.8);
+    }
+    .photo--placeholder {
+      display: grid;
+      place-items: center;
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .title {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin: 0 0 6px 0;
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+    }
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      box-shadow: 0 0 10px rgba(34,211,238,0.6);
+    }
+    .subtitle {
+      margin: 0;
+      color: var(--muted);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .info {
+      display: grid;
+      gap: 10px;
+      padding: 14px 16px;
+      border-radius: 12px;
+      background: rgba(15,23,42,0.6);
+      border: 1px solid rgba(148,163,184,0.15);
+    }
+    .label {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .list {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--text);
+    }
+    .list li { margin-bottom: 6px; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .footer {
+      margin-top: 16px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    @media (max-width: 780px) {
+      .header { grid-template-columns: 1fr; }
+      .grid { grid-template-columns: 1fr; }
+      .photo { width: 120px; height: 120px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+      <img class="photo" src="Photo_01.jpg" alt="Photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+      <div class="photo photo--placeholder" style="display: none;">Photo</div>
+      <div>
+        <h1 class="title"><span class="dot"></span> Dmytro Dronov</h1>
+        <p class="subtitle">BIM Manager | Digital Building Manager</p>
+        <p class="subtitle">Service is running. Access is restricted to authorized users.</p>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="info">
+        <div class="label">Contact</div>
+        <div>Email: <a href="mailto:dronov.dmitry.bim@gmail.com">dronov.dmitry.bim@gmail.com</a></div>
+        
+		</div>
+
+      <div class="info">
+        <div class="label">Competencies</div>
+        <ul class="list">
+          <li>MS Office (Excel, Word, Outlook) - Expert</li>
+          <li>Revit (14 years) - Expert</li>
+          <li>Autocad (14 years) - Expert</li>
+          <li>Navisworks (5 years) - Expert</li>
+          <li>Python (10 year)</li>
+          <li>C# (5 year)</li>
+          <li>VBA (1 year)</li>
+        </ul>
+      </div>
+
+      <div class="info">
+        <div class="label">Professional Experience</div>
+        <ul class="list">
+          <li>Digital Building Manager, Germany (02/2025 - 09/2025)</li>
+          <li>BIM Manager, Turkey (09/2014 - 03/2022)</li>
+          <li>Architect, Ukraine, Dnipro (05/2006 - 03/2014)</li>
+        </ul>
+      </div>
+
+      <div class="info">
+        <div class="label">Education and Languages</div>
+        <ul class="list">
+          <li>MSc in Industrial and Civil Engineering, Lazaryan Institute of Railway Transport (2001-2006)</li>
+          <li>Ukrainian, Russian - Native</li>
+          <li>German - Intermediate (B1)</li>
+          <li>English - Proficient (B2)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer">
+      Place of birth: Dnipro, Ukraine | Marital status: Married, 2 children
+    </div>
+  </div>
+</body>
+</html>

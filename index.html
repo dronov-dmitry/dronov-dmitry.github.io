@@ -1,0 +1,1774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="theme-color" content="#080d14" />
+
+  <!-- DNS pre-fetch & preconnect for external origins -->
+  <link rel="dns-prefetch" href="https://ipapi.co" />
+  <link rel="preconnect" href="https://ipapi.co" />
+  <link rel="dns-prefetch" href="https://github.com" />
+  <link rel="preconnect" href="https://github.com" />
+  <link rel="preconnect" href="https://www.youtube.com" />
+
+  <!-- Favicon / icons -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="Photo_01.jpg" />
+
+  <!-- Search engines: index this page -->
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="googlebot" content="index, follow, max-image-preview:large" />
+  <meta name="yandex" content="index, follow" />
+
+  <!-- Search engine verification tokens -->
+  <meta name="google-site-verification" content="ft00KUFjG8AJXxE1fEwM55aMh6BFeZsk0rJoN8FKVVs" />
+  <meta name="msvalidate.01" content="96F89C2099F692A5FCD0F9F1AB4E42DD" />
+  <meta name="yandex-verification" content="f364c312355462ee" />
+  <meta name="baidu-site-verification" content="local_only_placeholder" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://dronov-dmitry.github.io/" />
+
+  <!-- Hreflang: one tag per supported locale, plus x-default -->
+  <link rel="alternate" hreflang="x-default" href="https://dronov-dmitry.github.io/" />
+  <link rel="alternate" hreflang="en" href="https://dronov-dmitry.github.io/" />
+  <link rel="alternate" hreflang="ru" href="https://dronov-dmitry.github.io/" />
+  <link rel="alternate" hreflang="de" href="https://dronov-dmitry.github.io/index_germ.html" />
+  <link rel="alternate" hreflang="fr" href="https://dronov-dmitry.github.io/" />
+  <link rel="alternate" hreflang="es" href="https://dronov-dmitry.github.io/" />
+  <link rel="alternate" hreflang="uk" href="https://dronov-dmitry.github.io/" />
+  <link rel="alternate" hreflang="ru-ru" href="https://dronov-dmitry.github.io/" />
+  <link rel="alternate" hreflang="de-de" href="https://dronov-dmitry.github.io/index_germ.html" />
+
+  <!-- Preload critical font: Inter — loads asynchronously via media trick -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" crossorigin="anonymous" as="style" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" /></noscript>
+
+  <!-- Primary page title -->
+  <title>Dmitry Dronov | Web Products and Landing Pages — Portfolio, Process and Project Calculator</title>
+
+  <!-- Meta description -->
+  <meta name="description" content="I design and build conversion-focused landing pages, service websites, custom web tools and SaaS products. Portfolio of 7+ real projects. Transparent calculator, 5-7 day turnaround, 6 languages." />
+
+  <!-- Additional keyword-rich description for search context expansion -->
+  <meta name="keywords" content="Dmitry Dronov, web developer, landing page, conversion-focused website, web product, portfolio, SaaS, web tool, multi-language website, price calculator, website development process, UKRAINE freelance developer, German developer freelancer, website built in 5-7 days" />
+
+   <!-- ─── Open Graph ─── -->
+   <meta property="og:type" content="website" />
+   <meta property="og:url" content="https://dronov-dmitry.github.io/" />
+   <meta property="og:title" content="Dmitry Dronov | Web Products and Landing Pages" />
+   <meta property="og:description" content="Conversion-focused landing pages, service websites and custom web tools — portfolio of 7+ real products with transparent pricing and multi-language support." />
+   <meta property="og:image" content="https://dronov-dmitry.github.io/og-image.jpg" />
+   <meta property="og:image:width" content="1200" />
+   <meta property="og:image:height" content="630" />
+   <meta property="og:image:alt" content="Dmitry Dronov — Web Developer Portfolio" />
+   <meta property="og:site_name" content="Dmitry Dronov Portfolio" />
+   <meta property="og:locale" content="en_US" />
+   <meta property="og:locale:alternate" content="ru_RU" />
+   <meta property="og:locale:alternate" content="de_DE" />
+   <meta property="og:locale:alternate" content="fr_FR" />
+   <meta property="og:locale:alternate" content="es_ES" />
+   <meta property="og:locale:alternate" content="uk_UA" />
+
+  <!-- ─── Twitter Card ─── -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://dronov-dmitry.github.io/" />
+  <meta name="twitter:title" content="Dmitry Dronov | Web Products and Landing Pages" />
+  <meta name="twitter:description" content="Conversion-focused landing pages, service websites and custom web tools — portfolio of 7+ real products." />
+  <meta name="twitter:image" content="https://dronov-dmitry.github.io/Photo_01.jpg" />
+  <meta name="twitter:image:alt" content="Dmitry Dronov — Web Developer Portfolio" />
+
+  <!-- ─── Schema.org JSON-LD ─── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://dronov-dmitry.github.io/#website",
+        "url": "https://dronov-dmitry.github.io/",
+        "name": "Dmitry Dronov | Web Products and Landing Pages",
+        "description": "Conversion-focused landing pages, service websites and custom web tools by Dmitry Dronov.",
+        "publisher": { "@id": "https://dronov-dmitry.github.io/#person" },
+        "inLanguage": ["en", "ru", "de", "fr", "es", "uk"]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://dronov-dmitry.github.io/#webpage",
+        "url": "https://dronov-dmitry.github.io/",
+        "name": "Dmitry Dronov | Web Products and Landing Pages",
+        "description": "I design and build conversion-focused landing pages, service websites, custom web tools and SaaS products.",
+        "isPartOf": { "@id": "https://dronov-dmitry.github.io/#website" },
+        "about": { "@id": "https://dronov-dmitry.github.io/#person" },
+        "inLanguage": "en",
+        "datePublished": "2025-01-01",
+        "dateModified": "2026-05-16",
+        "potentialAction": {
+          "@type": "CommunicateAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "mailto:dronov.dmitry.bim@gmail.com",
+            "actionPlatform": ["http://schema.org/DesktopWebPlatform","http://schema.org/MobileWebPlatform"]
+          },
+          "name": "Send request"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://dronov-dmitry.github.io/#person",
+        "name": "Dmitry Dronov",
+        "url": "https://dronov-dmitry.github.io/",
+        "email": "dronov.dmitry.bim@gmail.com",
+        "jobTitle": "Web Developer",
+        "description": "Web developer specializing in conversion-focused landing pages, service websites and custom web tools. Portfolio of 7+ real products including Energo-pass, 5D, Calendar-logging, Fertig-Lance, CRM, Translate Bot and Europe-estate Bot.",
+        "knowsAbout": ["landing page development","web design","conversion optimization","SaaS development","web automation tools","BIM software","Frontend development","Python","C#","VBA"],
+        "sameAs": ["https://github.com/dronov-dmitry"]
+      },
+      {
+        "@type": "Service",
+        "name": "Landing Page Development",
+        "provider": { "@id": "https://dronov-dmitry.github.io/#person" },
+        "description": "Conversion-focused single-page websites built in 5–7 days with clear offer, crisp UX and a path from first click to a paid request.",
+        "serviceOutput": "Landing page",
+        "areaServed": { "@type": "City", "name": "Remote — Worldwide" }
+      },
+      {
+        "@type": "Service",
+        "name": "Multi-page Website Development",
+        "provider": { "@id": "https://dronov-dmitry.github.io/#person" },
+        "description": "Corporate website up to 5 pages with responsive build, basic SEO and analytics setup.",
+        "areaServed": { "@type": "City", "name": "Remote — Worldwide" }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How fast can a landing page launch?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A focused landing page usually takes 5-7 days when content and feedback are available quickly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can the website be multilingual?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The site supports Russian, German, English, French, Spanish and Ukrainian with automatic browser-language detection."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens after I send a request?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Your email client opens with a prepared brief. Dmitry reviews the scope and replies with the next steps."
+            }
+          }
+        ]
+      }
+    ]
+  }
+   </script>
+   <style>
+    :root {
+      color-scheme: dark;
+      --ink: #f7fafc;
+      --muted: #a9b4c2;
+      --paper: #080d14;
+      --surface: #101823;
+      --surface-strong: #131d2a;
+      --line: rgba(226, 232, 240, 0.12);
+      --blue: #5b8cff;
+      --teal: #29c7b8;
+      --red: #ff6b6b;
+      --gold: #f5b84b;
+      --green: #45d483;
+      --shadow: 0 24px 70px rgba(0, 0, 0, 0.38);
+      --radius: 8px;
+      --max: 1180px;
+      --font: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 66px;
+    }
+
+    body {
+      margin: 0;
+      padding-top: 66px;
+      min-height: 100vh;
+      font-family: var(--font);
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 16% 4%, rgba(91, 140, 255, 0.18), transparent 30rem),
+        radial-gradient(circle at 88% 18%, rgba(41, 199, 184, 0.12), transparent 28rem),
+        linear-gradient(180deg, #080d14 0%, #0b111a 48%, #090d13 100%);
+      letter-spacing: 0;
+    }
+
+        /* ===== REVEAL ON SCROLL ===== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(32px);
+      transition: opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                  transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+    .reveal-delay-5 { transition-delay: 0.5s; }
+
+    .reveal-left {
+      opacity: 0;
+      transform: translateX(-30px);
+      transition: opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                  transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .reveal-left.is-visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .reveal-right {
+      opacity: 0;
+      transform: translateX(30px);
+      transition: opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                  transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .reveal-right.is-visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .reveal-scale {
+      opacity: 0;
+      transform: scale(0.92);
+      transition: opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                  transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .reveal-scale.is-visible {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    body.is-modal-open {
+      overflow: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input,
+    textarea,
+    select {
+      font: inherit;
+    }
+
+    button {
+      border: 0;
+      cursor: pointer;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    .page-shell {
+      overflow: hidden;
+    }
+
+    .container {
+      width: min(100% - 32px, var(--max));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      border-bottom: 1px solid var(--line);
+      background: rgba(8, 13, 20, 0.82);
+      backdrop-filter: blur(18px);
+    }
+
+    .topbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 66px;
+      gap: 16px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 0;
+      font-weight: 800;
+    }
+
+    .brand-mark {
+      display: grid;
+      width: 38px;
+      height: 38px;
+      place-items: center;
+      border-radius: var(--radius);
+      color: #fff;
+      background: linear-gradient(135deg, #1f2d42, var(--blue));
+      box-shadow: 0 12px 30px rgba(91, 140, 255, 0.24);
+      flex: 0 0 auto;
+    }
+
+    .brand-name {
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .nav {
+      display: none;
+      align-items: center;
+      gap: 20px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .nav a:hover {
+      color: var(--ink);
+    }
+
+    .top-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex: 0 0 auto;
+    }
+
+    .lang-select {
+      width: 78px;
+      min-height: 42px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      color: var(--ink);
+      background: rgba(19, 29, 42, 0.9);
+      font-weight: 800;
+      text-transform: uppercase;
+      padding: 0 8px;
+      outline: none;
+    }
+
+    .lang-select:focus {
+      border-color: var(--blue);
+      box-shadow: 0 0 0 4px rgba(37, 88, 216, 0.14);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      gap: 10px;
+      border-radius: var(--radius);
+      padding: 12px 16px;
+      font-weight: 850;
+      line-height: 1;
+      transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease, color 180ms ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+    }
+
+    .btn-primary {
+      color: #fff;
+      background: var(--blue);
+      box-shadow: 0 16px 34px rgba(91, 140, 255, 0.25);
+    }
+
+    .btn-primary:hover {
+      background: #4778f0;
+    }
+
+    .btn-secondary {
+      color: var(--ink);
+      background: rgba(19, 29, 42, 0.82);
+      border: 1px solid var(--line);
+    }
+
+    .btn-dark {
+      color: #fff;
+      background: #111827;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+    }
+
+    .btn-full {
+      width: 100%;
+    }
+
+    .hero {
+      position: relative;
+      padding: 32px 0 28px;
+    }
+
+    .hero-grid {
+      display: grid;
+      gap: 18px;
+      align-items: start;
+    }
+
+    .hero-copy {
+      display: flex;
+      min-height: 410px;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 860px;
+      padding: 24px 0;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      width: fit-content;
+      align-items: center;
+      gap: 8px;
+      margin: 0 0 18px;
+      border: 1px solid rgba(31, 138, 81, 0.22);
+      border-radius: 999px;
+      background: rgba(69, 212, 131, 0.1);
+      color: #b7f8d1;
+      padding: 8px 12px;
+      font-size: 13px;
+      font-weight: 850;
+    }
+
+    .eyebrow-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--green);
+      box-shadow: 0 0 0 5px rgba(69, 212, 131, 0.12);
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      max-width: 13ch;
+      margin-bottom: 18px;
+      font-size: clamp(38px, 9vw, 68px);
+      line-height: 1;
+      letter-spacing: 0;
+    }
+
+    .hero-lead {
+      max-width: 650px;
+      margin-bottom: 24px;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.58;
+    }
+
+    .hero-actions {
+      display: grid;
+      gap: 10px;
+    }
+
+    .hero-proof {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    .proof-item {
+      border-left: 3px solid var(--blue);
+      background: rgba(19, 29, 42, 0.74);
+      padding: 12px;
+    }
+
+    .proof-value {
+      display: block;
+      font-size: 22px;
+      font-weight: 900;
+    }
+
+    .proof-label {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 750;
+      line-height: 1.35;
+    }
+
+    .section {
+      padding: 34px 0;
+    }
+
+    .section-heading {
+      display: grid;
+      gap: 10px;
+      margin-bottom: 22px;
+    }
+
+    .section-kicker {
+      margin: 0;
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin-bottom: 0;
+      font-size: clamp(30px, 8vw, 56px);
+      line-height: 1.02;
+      letter-spacing: 0;
+    }
+
+    .section-text {
+      max-width: 690px;
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.58;
+    }
+
+    .trust-strip {
+      display: grid;
+      gap: 10px;
+    }
+
+    .trust-item {
+      display: grid;
+      grid-template-columns: 44px 1fr;
+      gap: 12px;
+      align-items: start;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(19, 29, 42, 0.74);
+      padding: 16px;
+    }
+
+    .icon-box {
+      display: grid;
+      width: 44px;
+      height: 44px;
+      place-items: center;
+      border-radius: var(--radius);
+      color: #fff;
+      background: linear-gradient(135deg, #22314a, #0f766e);
+      font-weight: 900;
+    }
+
+    .trust-item h3,
+    .step h3,
+    .type-card h3,
+    .option-card h3 {
+      margin-bottom: 6px;
+      font-size: 18px;
+      line-height: 1.25;
+    }
+
+    .trust-item p,
+    .step p,
+    .type-card p,
+    .option-card p {
+      margin-bottom: 0;
+      color: var(--muted);
+      line-height: 1.48;
+    }
+
+    .project-table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface-strong);
+      box-shadow: var(--shadow);
+    }
+
+    .project-table {
+      width: 100%;
+      min-width: 760px;
+      border-collapse: collapse;
+      text-align: left;
+    }
+
+    .project-table th {
+      background: #0d1520;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 850;
+      padding: 14px 16px;
+    }
+
+    .project-table td {
+      border-top: 1px solid var(--line);
+      padding: 14px 16px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.42;
+    }
+
+    .project-table tbody tr:hover {
+      background: rgba(91, 140, 255, 0.08);
+    }
+
+    .project-table td:first-child {
+      color: var(--ink);
+      font-weight: 850;
+    }
+
+    .link-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 40px;
+      min-width: 96px;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: rgba(91, 140, 255, 0.12);
+      color: var(--ink);
+      padding: 10px 18px;
+      font-size: 13px;
+      font-weight: 850;
+      line-height: 1.15;
+      white-space: nowrap;
+      transition: background 180ms ease, transform 180ms ease;
+    }
+
+    .link-btn:hover {
+      transform: translateY(-1px);
+      background: rgba(91, 140, 255, 0.2);
+    }
+
+    .process {
+      display: grid;
+      gap: 12px;
+      counter-reset: steps;
+    }
+
+    .step {
+      position: relative;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(19, 29, 42, 0.74);
+      padding: 18px;
+      counter-increment: steps;
+    }
+
+    .step::before {
+      content: counter(steps, decimal-leading-zero);
+      display: grid;
+      width: 44px;
+      height: 44px;
+      place-items: center;
+      margin-bottom: 14px;
+      border-radius: var(--radius);
+      color: #fff;
+      background: var(--teal);
+      font-weight: 900;
+    }
+
+    .calculator-band {
+      background:
+        radial-gradient(circle at 12% 0%, rgba(91, 140, 255, 0.2), transparent 26rem),
+        linear-gradient(180deg, #0b111a 0%, #080d14 100%);
+      color: #fff;
+      padding: 42px 0;
+    }
+
+    .calculator-band .section-text,
+    .calculator-band .type-card p,
+    .calculator-band .option-card p,
+    .calculator-band .field span,
+    .calculator-band .summary-muted {
+      color: rgba(255, 255, 255, 0.66);
+    }
+
+    .calculator-band .section-kicker {
+      color: #8ab6ff;
+    }
+
+    .calculator-grid {
+      display: grid;
+      gap: 16px;
+      margin: 0 auto;
+    }
+
+    .calc-step {
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: var(--radius);
+      background: rgba(19, 29, 42, 0.74);
+      padding: 16px;
+      box-shadow: 0 18px 52px rgba(0, 0, 0, 0.22);
+    }
+
+    .calc-step-head {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .calc-step-number {
+      display: grid;
+      width: 38px;
+      height: 38px;
+      place-items: center;
+      flex: 0 0 auto;
+      border-radius: var(--radius);
+      background: var(--blue);
+      color: #fff;
+      font-weight: 950;
+    }
+
+    .calc-step-head h3 {
+      margin: 2px 0 4px;
+      font-size: 21px;
+      line-height: 1.2;
+    }
+
+    .calc-step-head p {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.62);
+      line-height: 1.45;
+    }
+
+    .type-grid,
+    .option-grid {
+      display: grid;
+      gap: 10px;
+    }
+
+    .type-card,
+    .option-card {
+      position: relative;
+      width: 100%;
+      min-height: 118px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: var(--radius);
+      color: #fff;
+      background: rgba(255, 255, 255, 0.055);
+      padding: 16px;
+      text-align: left;
+      transition: border-color 180ms ease, background 180ms ease, transform 180ms ease;
+    }
+
+    .type-card:hover,
+    .option-card:hover {
+      transform: translateY(-1px);
+      border-color: rgba(138, 182, 255, 0.55);
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .type-card.is-active,
+    .option-card.is-active {
+      border-color: #8ab6ff;
+      background: rgba(37, 88, 216, 0.24);
+      box-shadow: 0 0 0 4px rgba(37, 88, 216, 0.18);
+    }
+
+    .card-topline {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      color: #b8d2ff;
+      font-weight: 950;
+      white-space: nowrap;
+    }
+
+    .quote-panel {
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: var(--radius);
+      background: rgba(19, 29, 42, 0.74);
+      color: #fff;
+      padding: 16px;
+    }
+
+    .calculator-band .quote-panel .field span,
+    .quote-panel .summary-muted {
+      color: rgba(255, 255, 255, 0.66);
+    }
+
+    .quote-panel .summary-line strong,
+    .quote-panel h3 {
+      color: #fff;
+    }
+
+    .quote-panel h3 {
+      margin-bottom: 14px;
+      font-size: 24px;
+      line-height: 1.15;
+    }
+
+    .field-grid {
+      display: grid;
+      gap: 12px;
+    }
+
+    .field {
+      display: grid;
+      gap: 7px;
+    }
+
+    .field span {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .field input,
+    .field textarea {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #ffffff;
+      color: #101823;
+      padding: 13px 12px;
+      outline: none;
+    }
+
+    .field textarea {
+      min-height: 112px;
+      resize: vertical;
+    }
+
+    .field input:focus,
+    .field textarea:focus {
+      border-color: var(--blue);
+      box-shadow: 0 0 0 4px rgba(37, 88, 216, 0.12);
+    }
+
+    .error-text {
+      margin-top: 6px;
+      color: var(--red);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .summary {
+      display: grid;
+      gap: 12px;
+      margin: 0 0 16px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.055);
+      padding: 16px;
+    }
+
+    .summary-line {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      line-height: 1.35;
+    }
+
+    .summary-total {
+      align-items: end;
+      font-size: 18px;
+      font-weight: 900;
+    }
+
+    .total-price {
+      color: var(--blue);
+      font-size: 34px;
+      line-height: 1;
+      white-space: nowrap;
+    }
+
+    .assurance {
+      display: grid;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .assurance a {
+      color: #d9e5ff;
+      font-weight: 850;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .assurance-item {
+      border-left: 3px solid var(--green);
+      background: rgba(69, 212, 131, 0.1);
+      padding: 10px 12px;
+      color: #c8f8d9;
+      font-size: 13px;
+      line-height: 1.42;
+    }
+
+    .assurance-price {
+      border-left-color: var(--blue);
+      background: rgba(91, 140, 255, 0.11);
+      color: #d7e4ff;
+    }
+
+    .faq {
+      display: grid;
+      gap: 10px;
+    }
+
+    .faq details {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(19, 29, 42, 0.74);
+      padding: 16px;
+    }
+
+    .faq summary {
+      cursor: pointer;
+      font-weight: 850;
+    }
+
+    .faq p {
+      margin: 12px 0 0;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    .final-cta {
+      padding: 42px 0 54px;
+    }
+
+    .cta-panel {
+      display: grid;
+      gap: 18px;
+      align-items: center;
+      border-radius: var(--radius);
+      background: var(--blue);
+      color: #fff;
+      padding: 24px;
+      box-shadow: 0 22px 65px rgba(37, 88, 216, 0.22);
+    }
+
+    .cta-panel h2 {
+      font-size: clamp(30px, 8vw, 54px);
+    }
+
+    .cta-panel p {
+      margin-bottom: 0;
+      color: rgba(255, 255, 255, 0.76);
+      line-height: 1.55;
+    }
+
+    .footer {
+      border-top: 1px solid var(--line);
+      padding: 24px 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .footer-inner {
+      display: grid;
+      gap: 10px;
+    }
+
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 40;
+      display: grid;
+      place-items: center;
+      background: rgba(10, 10, 10, 0.72);
+      padding: 16px;
+    }
+
+    .modal {
+      width: min(100%, 680px);
+      max-height: 90vh;
+      overflow: auto;
+      border-radius: var(--radius);
+      background: #fff;
+      color: #101823;
+      padding: 18px;
+      box-shadow: var(--shadow);
+    }
+
+    .modal-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: start;
+      margin-bottom: 14px;
+    }
+
+    .modal h2 {
+      margin-bottom: 8px;
+      font-size: 24px;
+    }
+
+    .modal p {
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .close-btn {
+      display: grid;
+      width: 42px;
+      height: 42px;
+      place-items: center;
+      border-radius: var(--radius);
+      color: #101823;
+      background: #edf1f5;
+      font-size: 24px;
+    }
+
+    .copy-text {
+      width: 100%;
+      min-height: 260px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #f7f9fb;
+      padding: 12px;
+      color: #101823;
+      font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+      font-size: 13px;
+      resize: vertical;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    [hidden] {
+      display: none !important;
+    }
+
+    @media (min-width: 620px) {
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .trust-strip,
+      .process {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .field-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .field-wide {
+        grid-column: 1 / -1;
+      }
+    }
+
+    @media (min-width: 860px) {
+      .nav {
+        display: flex;
+      }
+
+      .hero {
+        padding: 40px 0 46px;
+      }
+
+      .hero-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .section {
+        padding: 52px 0;
+      }
+
+      .section-heading {
+        grid-template-columns: 0.82fr 1fr;
+        align-items: end;
+        margin-bottom: 30px;
+      }
+
+      .trust-strip,
+      .process {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+
+      .calculator-band {
+        padding: 58px 0;
+      }
+
+      .calculator-grid {
+        gap: 18px;
+      }
+
+      .type-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .option-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .quote-panel {
+        padding: 22px;
+      }
+
+      .cta-panel {
+        grid-template-columns: 1fr auto;
+        padding: 32px;
+      }
+
+      .footer-inner {
+        grid-template-columns: 1fr auto;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <a class="brand" href="#top" aria-label="Dmitry Dronov">
+          <span class="brand-mark">DD</span>
+          <span class="brand-name">Dmitry Dronov</span>
+        </a>
+        <nav class="nav" aria-label="Primary navigation">
+          <a href="#work" data-i18n="nav.work">Work</a>
+          <a href="#process" data-i18n="nav.process">Process</a>
+          <a href="#calculator" data-i18n="nav.price">Price</a>
+          <a href="#faq" data-i18n="nav.faq">FAQ</a>
+        </nav>
+        <div class="top-actions">
+          <label class="sr-only" for="languageSelect">Language</label>
+          <select class="lang-select" id="languageSelect" aria-label="Language">
+            <option value="ru">RU</option>
+            <option value="ua">UA</option>
+            <option value="de">DE</option>
+            <option value="en">EN</option>
+            <option value="fr">FR</option>
+            <option value="es">ES</option>
+          </select>
+          <a class="btn btn-primary" href="#calculator" data-i18n="nav.cta">Estimate</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">
+              <span class="eyebrow-dot"></span>
+              <span data-i18n="hero.eyebrow">Web products for measurable growth</span>
+            </p>
+            <h1 data-i18n="hero.title">Launch a site that sells before it explains.</h1>
+            <p class="hero-lead" data-i18n="hero.lead">
+              I design and build landing pages, service websites and custom web tools with a clear offer, crisp UX and a path from first click to paid request.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#calculator" data-i18n="hero.primary">Calculate project</a>
+              <a class="btn btn-secondary" href="#work" data-i18n="hero.secondary">View portfolio</a>
+            </div>
+            <div class="hero-proof reveal reveal-delay-3" aria-label="Project proof">
+              <div class="proof-item">
+                <span class="proof-value" id="projectCount">6</span>
+                <span class="proof-label" data-i18n="hero.proofProjects">published products</span>
+              </div>
+              <div class="proof-item">
+                <span class="proof-value">5-7</span>
+                <span class="proof-label" data-i18n="hero.proofDays">days for landing</span>
+              </div>
+              <div class="proof-item">
+                <span class="proof-value">6</span>
+                <span class="proof-label" data-i18n="hero.proofLangs">site languages</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="work">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker" data-i18n="work.kicker">Selected products</p>
+              <h2 data-i18n="work.title">Proof that ships.</h2>
+            </div>
+            <p class="section-text" data-i18n="work.text">
+              A compact portfolio of real services, SaaS experiments and automation tools with public links.
+            </p>
+          </div>
+          <div class="project-table-wrap">
+            <table class="project-table">
+              <thead>
+                <tr>
+                  <th data-i18n="work.tableName">Name</th>
+                  <th data-i18n="work.tableDescription">Description</th>
+                  <th data-i18n="work.tablePrice">Price</th>
+                  <th data-i18n="work.tableGithub">Github</th>
+                  <th data-i18n="work.tableService">Service</th>
+                  <th data-i18n="work.tableVideo">Video</th>
+                </tr>
+              </thead>
+              <tbody id="projectGrid"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="process">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker" data-i18n="process.kicker">Process</p>
+              <h2 data-i18n="process.title">From vague idea to working page.</h2>
+            </div>
+            <p class="section-text" data-i18n="process.text">
+              The workflow keeps decisions visible, so the design can move fast without becoming random.
+            </p>
+          </div>
+          <div class="process">
+                        <article class="step reveal reveal-delay-1">
+              <h3 data-i18n="process.steps.0.title">Strategy & Offer</h3>
+              <p data-i18n="process.steps.0.text">From competitor analysis to messaging and the main conversion action.</p>
+            </article>
+                        <article class="step reveal reveal-delay-2">
+              <h3 data-i18n="process.steps.1.title">Architecture of Meaning</h3>
+              <p data-i18n="process.steps.1.text">We design the copy structure and interaction logic without distracting decor.</p>
+            </article>
+                        <article class="step reveal reveal-delay-3">
+              <h3 data-i18n="process.steps.2.title">Visual Implementation</h3>
+              <p data-i18n="process.steps.2.text">We create an aesthetic, responsive interface that strengthens your message.</p>
+            </article>
+                        <article class="step reveal reveal-delay-4">
+              <h3 data-i18n="process.steps.3.title">Technical Start</h3>
+              <p data-i18n="process.steps.3.text">Clean coding, analytics setup, and full preparation for traffic.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="calculator-band reveal" id="calculator">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker" data-i18n="calc.kicker">Project estimator</p>
+              <h2 data-i18n="calc.title">Choose scope and send a clean brief.</h2>
+            </div>
+            <p class="section-text" data-i18n="calc.text">
+              The estimate updates instantly. After submission, your email app opens with a prepared request.
+            </p>
+          </div>
+
+          <form class="calculator-grid" id="requestForm" novalidate autocomplete="on">
+                        <section class="calc-step reveal reveal-delay-1">
+              <div class="calc-step-head">
+                <span class="calc-step-number">1</span>
+                <div>
+                  <h3 data-i18n="calc.siteType">Project type</h3>
+                  <p data-i18n="calc.siteTypeHint">Choose the base format for the work.</p>
+                </div>
+              </div>
+              <div class="type-grid" id="siteTypeGrid"></div>
+            </section>
+
+                        <section class="calc-step reveal reveal-delay-2">
+              <div class="calc-step-head">
+                <span class="calc-step-number">2</span>
+                <div>
+                  <h3 data-i18n="calc.options">Options</h3>
+                  <p data-i18n="calc.optionsHint">Add only what the project really needs.</p>
+                </div>
+              </div>
+              <div class="option-grid" id="optionGrid"></div>
+            </section>
+
+                        <section class="calc-step quote-panel reveal reveal-delay-3" aria-labelledby="quoteTitle">
+              <div class="calc-step-head">
+                <span class="calc-step-number">3</span>
+                <div>
+                  <h3 id="quoteTitle" data-i18n="form.title">Request estimate</h3>
+                  <p data-i18n="calc.contactsHint">Leave contacts so I can reply with the next step.</p>
+                </div>
+              </div>
+                <div class="field-grid">
+                  <label class="field">
+                    <span data-i18n="form.name">Name *</span>
+                    <input id="nameInput" name="name" autocomplete="name" />
+                    <small class="error-text" id="nameError"></small>
+                  </label>
+                  <label class="field">
+                    <span data-i18n="form.email">Email *</span>
+                    <input id="emailInput" name="email" type="email" autocomplete="email" />
+                    <small class="error-text" id="emailError"></small>
+                  </label>
+                  <label class="field field-wide">
+                    <span data-i18n="form.phone">WhatsApp / Telegram phone *</span>
+                    <input id="phoneInput" name="phone" type="tel" autocomplete="tel" />
+                    <small class="error-text" id="phoneError"></small>
+                  </label>
+                  <label class="field field-wide">
+                    <span data-i18n="form.comment">Comment</span>
+                    <textarea id="commentInput" name="comment"></textarea>
+                  </label>
+                </div>
+            </section>
+
+                        <section class="calc-step reveal reveal-delay-4">
+              <div class="calc-step-head">
+                <span class="calc-step-number">4</span>
+                <div>
+                  <h3 data-i18n="calc.review">Review and send</h3>
+                  <p data-i18n="calc.reviewHint">Check the estimate before opening the email draft.</p>
+                </div>
+              </div>
+                <div class="summary" aria-live="polite">
+                  <div class="summary-line">
+                    <span class="summary-muted" data-i18n="summary.type">Project</span>
+                    <strong id="summaryType">Landing page</strong>
+                  </div>
+                  <div class="summary-line">
+                    <span class="summary-muted" data-i18n="summary.options">Options</span>
+                    <strong id="summaryOptions">$0 USD</strong>
+                  </div>
+                  <div class="summary-line summary-total">
+                    <span data-i18n="summary.total">Total</span>
+                    <strong class="total-price" id="summaryTotal">$300</strong>
+                  </div>
+                </div>
+
+                <button class="btn btn-primary btn-full" type="submit" data-i18n="form.submit">
+                  Send request
+                </button>
+
+              <div class="assurance">
+                <div class="assurance-item assurance-price">
+                  <span data-i18n="form.priceSourceText">Price benchmark:</span>
+                  <a id="priceSourceLink" href="#" target="_blank" rel="noopener">Gemini</a>
+                </div>
+                <div class="assurance-item">
+                  <span data-i18n="form.escrowText">Safe escrow option:</span>
+                  <a href="https://info-market.pages.dev/" target="_blank" rel="noopener">Info-Market Escrow</a>
+                </div>
+                <div class="assurance-item" data-i18n="form.assuranceData">
+                  The form creates an email draft in your browser. No hidden data transfer.
+                </div>
+              </div>
+            </section>
+          </form>
+        </div>
+      </section>
+
+      <section class="section reveal" id="faq">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker" data-i18n="faq.kicker">Questions</p>
+              <h2 data-i18n="faq.title">Before we start.</h2>
+            </div>
+            <p class="section-text" data-i18n="faq.text">
+              A few practical details that usually decide whether the project moves quickly.
+            </p>
+          </div>
+          <div class="faq" id="faqList"></div>
+        </div>
+      </section>
+
+      <section class="final-cta reveal">
+        <div class="container">
+          <div class="cta-panel reveal">
+            <div>
+              <h2 data-i18n="cta.title">Ready to turn the offer into a page?</h2>
+              <p data-i18n="cta.text">
+                Pick the project type, add options and send the brief. I will reply with the next steps.
+              </p>
+            </div>
+            <a class="btn btn-dark" href="#calculator" data-i18n="cta.button">Start estimate</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <span>© <span id="year"></span> Dmitry Dronov</span>
+        <a href="mailto:dronov.dmitry.bim@gmail.com">dronov.dmitry.bim@gmail.com</a>
+      </div>
+    </footer>
+  </div>
+
+  <div class="modal-backdrop" id="fallbackModal" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="fallbackTitle">
+      <div class="modal-head">
+        <div>
+          <h2 id="fallbackTitle" data-i18n="modal.title">Copy request text</h2>
+          <p>
+            <span data-i18n="modal.text">If the email app did not open, send this text manually to</span>
+            <strong id="recipientEmailText">dronov.dmitry.bim@gmail.com</strong>
+          </p>
+        </div>
+        <button class="close-btn" id="closeModal" type="button" aria-label="Close">×</button>
+      </div>
+      <textarea class="copy-text" id="fallbackText" readonly></textarea>
+      <button class="btn btn-primary" id="copyButton" type="button" data-i18n="modal.copy">Copy text</button>
+    </div>
+  </div>
+
+  <script src="settings.js"></script>
+  <script src="i18n.js"></script>
+  <script>
+    const settings = window.CALCULATOR_SETTINGS || {};
+    const state = {
+      lang: "en",
+      siteType: "landing",
+      options: new Set(),
+      recipientEmail: settings.recipientEmail || "dronov.dmitry.bim@gmail.com",
+      siteTypes: Array.isArray(settings.siteTypes) ? settings.siteTypes : [],
+      optionItems: Array.isArray(settings.options) ? settings.options : [],
+      projects: Array.isArray(settings.projects) ? settings.projects : [],
+      marketSources: Array.isArray(settings.marketSources) ? settings.marketSources : []
+    };
+
+    const $ = (selector) => document.querySelector(selector);
+    const $$ = (selector) => Array.from(document.querySelectorAll(selector));
+
+    function t(path) {
+      return i18n.t(path, state.lang);
+    }
+
+    function formatCurrency(value) {
+      return `$${Number(value || 0).toLocaleString("en-US")} USD`;
+    }
+
+    function copyForSite(site) {
+      return t(`siteTypes.${site.id}`) || { name: site.name, description: site.description };
+    }
+
+    function copyForOption(option) {
+      return t(`optionsCopy.${option.id}`) || { name: option.name, bonus: option.bonus || option.description || "" };
+    }
+
+    function selectedSite() {
+      return state.siteTypes.find((site) => site.id === state.siteType) || state.siteTypes[0] || null;
+    }
+
+    function selectedOptions() {
+      return state.optionItems.filter((option) => state.options.has(option.id));
+    }
+
+    function optionsTotal() {
+      return selectedOptions().reduce((sum, option) => sum + Number(option.price || 0), 0);
+    }
+
+    function totalPrice() {
+      const site = selectedSite();
+      return Number(site ? site.price || 0 : 0) + optionsTotal();
+    }
+
+    function renderStaticTranslations() {
+      document.documentElement.lang = state.lang;
+      document.title = state.lang === "ru"
+        ? "Дмитрий Дронов | Лендинги и веб-продукты"
+        : state.lang === "ua"
+          ? "Дмитро Дронов | Лендинги та веб-продукти"
+          : state.lang === "de"
+            ? "Dmitry Dronov | Landingpages und Webprodukte"
+            : "Dmitry Dronov | Web products and landing pages";
+      $("[name='description']").setAttribute("content", t("hero.lead"));
+
+      $$("[data-i18n]").forEach((element) => {
+        element.textContent = t(element.dataset.i18n);
+      });
+    }
+
+    function renderProjects() {
+      const grid = $("#projectGrid");
+      grid.innerHTML = state.projects.map((project) => {
+        const description = t(`projectDescriptions.${project.name}`) || project.description || "";
+        const githubLink = project.github
+          ? `<a class="link-btn" href="${project.github}" target="_blank" rel="noopener">${t("work.code")}</a>`
+          : `<span class="summary-muted">-</span>`;
+        const videoLink = project.video
+          ? `<a class="link-btn" href="${project.video}" target="_blank" rel="noopener">${t("work.video")}</a>`
+          : `<span class="summary-muted">-</span>`;
+
+        return `
+          <tr>
+            <td>${project.name}</td>
+            <td>${description}</td>
+            <td><strong>${project.price || ""}</strong></td>
+            <td>${githubLink}</td>
+            <td><a class="link-btn" href="${project.service}" target="_blank" rel="noopener">${t("work.open")}</a></td>
+            <td>${videoLink}</td>
+          </tr>
+        `;
+      }).join("");
+
+      $("#projectCount").textContent = state.projects.length || 6;
+    }
+
+    function renderCalculator() {
+      const siteGrid = $("#siteTypeGrid");
+      siteGrid.innerHTML = state.siteTypes.map((site) => {
+        const copy = copyForSite(site);
+        return `
+          <button class="type-card ${state.siteType === site.id ? "is-active" : ""}" type="button" data-site-id="${site.id}">
+            <span class="card-topline">
+              <strong>${copy.name}</strong>
+              <span class="price">${formatCurrency(site.price)}</span>
+            </span>
+            <p>${copy.description}</p>
+          </button>
+        `;
+      }).join("");
+
+      const optionGrid = $("#optionGrid");
+      optionGrid.innerHTML = state.optionItems.map((option) => {
+        const copy = copyForOption(option);
+        return `
+          <button class="option-card ${state.options.has(option.id) ? "is-active" : ""}" type="button" data-option-id="${option.id}">
+            <span class="card-topline">
+              <strong>${copy.name}</strong>
+              <span class="price">+${formatCurrency(option.price)}</span>
+            </span>
+            <p>${copy.bonus}</p>
+          </button>
+        `;
+      }).join("");
+
+      const site = selectedSite();
+      const siteCopy = site ? copyForSite(site) : { name: t("none") };
+      $("#summaryType").textContent = siteCopy.name;
+      $("#summaryOptions").textContent = selectedOptions().length ? formatCurrency(optionsTotal()) : t("none");
+      $("#summaryTotal").textContent = formatCurrency(totalPrice());
+      const priceSource = state.marketSources[0];
+      const priceSourceLink = $("#priceSourceLink");
+      if (priceSource && priceSource.url) {
+        priceSourceLink.href = priceSource.url;
+        priceSourceLink.textContent = t("form.priceSourceLabel");
+        priceSourceLink.closest(".assurance-item").hidden = false;
+      } else {
+        priceSourceLink.closest(".assurance-item").hidden = true;
+      }
+
+      $$("[data-site-id]").forEach((button) => {
+        button.addEventListener("click", () => {
+          state.siteType = button.dataset.siteId;
+          renderCalculator();
+        });
+      });
+
+      $$("[data-option-id]").forEach((button) => {
+        button.addEventListener("click", () => {
+          const id = button.dataset.optionId;
+          if (state.options.has(id)) {
+            state.options.delete(id);
+          } else {
+            state.options.add(id);
+          }
+          renderCalculator();
+        });
+      });
+    }
+
+    function renderFaq() {
+      $("#faqList").innerHTML = t("faq.items").map((item) => `
+        <details>
+          <summary>${item.q}</summary>
+          <p>${item.a}</p>
+        </details>
+      `).join("");
+    }
+
+    function renderAll() {
+      renderStaticTranslations();
+      $("#languageSelect").value = state.lang;
+      renderProjects();
+      renderCalculator();
+      renderFaq();
+      $("#recipientEmailText").textContent = state.recipientEmail;
+      $("#year").textContent = new Date().getFullYear();
+    }
+
+    function clearErrors() {
+      ["name", "email", "phone"].forEach((field) => {
+        $(`#${field}Error`).textContent = "";
+      });
+    }
+
+    function validateForm() {
+      clearErrors();
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      const name = $("#nameInput").value.trim();
+      const email = $("#emailInput").value.trim();
+      const phone = $("#phoneInput").value.trim();
+      let valid = true;
+
+      if (!name) {
+        $("#nameError").textContent = t("errors.name");
+        valid = false;
+      }
+      if (!email || !emailPattern.test(email)) {
+        $("#emailError").textContent = t("errors.email");
+        valid = false;
+      }
+      if (!phone) {
+        $("#phoneError").textContent = t("errors.phone");
+        valid = false;
+      }
+
+      return valid;
+    }
+
+    function buildEmailBody() {
+      const labels = t("emailLabels");
+      const site = selectedSite();
+      const siteCopy = site ? copyForSite(site) : { name: t("none") };
+      const optionLines = selectedOptions().length
+        ? selectedOptions().map((option) => {
+          const copy = copyForOption(option);
+          return `- ${copy.name}: +${formatCurrency(option.price)}`;
+        }).join("\n")
+        : `- ${t("none")}`;
+
+      return [
+        "---",
+        `${labels.name}: ${$("#nameInput").value.trim()}`,
+        `${labels.email}: ${$("#emailInput").value.trim()}`,
+        `${labels.phone}: ${$("#phoneInput").value.trim()}`,
+        `${labels.comment}: ${$("#commentInput").value.trim() || labels.noComment}`,
+        "",
+        labels.type,
+        `- ${siteCopy.name}: ${formatCurrency(site ? site.price : 0)}`,
+        "",
+        labels.options,
+        optionLines,
+        "",
+        `${labels.total}: ${formatCurrency(totalPrice())}`,
+        "---"
+      ].join("\n");
+    }
+
+        function initRevealAnimation() {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+      );
+
+      $$(".reveal, .reveal-left, .reveal-right, .reveal-scale").forEach((el) => {
+        observer.observe(el);
+      });
+    }
+
+    function openFallback(body) {
+      $("#fallbackText").value = body;
+      $("#fallbackModal").hidden = false;
+      document.body.classList.add("is-modal-open");
+    }
+
+    function closeFallback() {
+      $("#fallbackModal").hidden = true;
+      document.body.classList.remove("is-modal-open");
+    }
+
+    function submitRequest(event) {
+      event.preventDefault();
+      if (!validateForm()) return;
+
+      const subject = `${t("emailSubject")} - ${$("#nameInput").value.trim()}`;
+      const body = buildEmailBody();
+
+      // 1. Показываем fallback-модалку сразу (всегда работает на телефоне)
+      openFallback(body);
+
+      // 2. Пытаемся открыть mailto, но НЕ меняем window.location
+      //    Используем <a> с target=_blank, чтобы не уходить со страницы
+      const mailtoLink = document.createElement("a");
+      mailtoLink.href = `mailto:${state.recipientEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      mailtoLink.target = "_blank";
+      mailtoLink.rel = "noopener noreferrer";
+      mailtoLink.style.display = "none";
+      document.body.appendChild(mailtoLink);
+      mailtoLink.click();
+      document.body.removeChild(mailtoLink);
+    }
+
+    function wireEvents() {
+      $("#languageSelect").addEventListener("change", (event) => {
+        state.lang = event.target.value;
+        renderAll();
+      });
+
+      $("#requestForm").addEventListener("submit", submitRequest);
+      $("#closeModal").addEventListener("click", closeFallback);
+      $("#fallbackModal").addEventListener("click", (event) => {
+        if (event.target.id === "fallbackModal") closeFallback();
+      });
+      $("#copyButton").addEventListener("click", async () => {
+        try {
+          await navigator.clipboard.writeText($("#fallbackText").value);
+          $("#copyButton").textContent = t("modal.copied");
+        } catch (error) {
+          $("#fallbackText").focus();
+          $("#fallbackText").select();
+        }
+        window.setTimeout(() => {
+          $("#copyButton").textContent = t("modal.copy");
+        }, 1800);
+      });
+    }
+
+    state.lang = i18n.detectLanguage();
+    if (!state.siteTypes.some((site) => site.id === state.siteType) && state.siteTypes[0]) {
+      state.siteType = state.siteTypes[0].id;
+    }
+
+        renderAll();
+    wireEvents();
+    initRevealAnimation();
+  </script>
+</body>
+</html>
