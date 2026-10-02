@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="canonical" href="https://dronov-dmitry.github.io/index_germ.html" />
+  <link rel="alternate" hreflang="x-default" href="https://dronov-dmitry.github.io/" />
+  <link rel="alternate" hreflang="en" href="https://dronov-dmitry.github.io/index_world.html" />
+  <link rel="alternate" hreflang="de" href="https://dronov-dmitry.github.io/index_germ.html" />
+
+  <title>Dronov Dmitry</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --accent: #60a5fa;
+      --accent-2: #22d3ee;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: radial-gradient(900px 500px at 10% 10%, #1f2937, var(--bg));
+      color: var(--text);
+      font: 16px/1.5 "Segoe UI", Arial, sans-serif;
+    }
+    .card {
+      width: min(980px, 92vw);
+      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+      border: 1px solid rgba(148,163,184,0.2);
+      border-radius: 16px;
+      padding: 28px 32px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    }
+    .header {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 20px;
+      align-items: center;
+      margin-bottom: 18px;
+    }
+    .photo {
+      width: 140px;
+      height: 140px;
+      border-radius: 16px;
+      object-fit: cover;
+      border: 1px solid rgba(148,163,184,0.2);
+      background: rgba(15,23,42,0.8);
+    }
+    .photo--placeholder {
+      display: grid;
+      place-items: center;
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .title {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin: 0 0 6px 0;
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+    }
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      box-shadow: 0 0 10px rgba(34,211,238,0.6);
+    }
+    .subtitle {
+      margin: 0;
+      color: var(--muted);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .info {
+      display: grid;
+      gap: 10px;
+      padding: 14px 16px;
+      border-radius: 12px;
+      background: rgba(15,23,42,0.6);
+      border: 1px solid rgba(148,163,184,0.15);
+    }
+    .label {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .list {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--text);
+    }
+    .list li { margin-bottom: 6px; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .table-wrap { overflow-x: auto; border-radius: 12px; border: 1px solid rgba(148,163,184,0.2); margin-top: 18px; box-shadow: 0 10px 30px rgba(0,0,0,0.35); background: var(--card); }
+    .proj-table { width: 100%; min-width: 980px; border-collapse: separate; border-spacing: 0; text-align: left; }
+    .proj-table thead th { background: #111f36; color: #fff; font-size: 13px; font-weight: 800; letter-spacing: 0.6px; text-transform: uppercase; padding: 13px 14px; }
+    .proj-table tbody td { color: var(--text); font-size: 14px; line-height: 1.45; padding: 11px 14px; border-top: 1px solid rgba(148,163,184,0.12); white-space: nowrap; vertical-align: top; }
+    .proj-table tbody td:nth-child(2) { white-space: normal; }
+    .proj-table tbody tr:hover { background: rgba(96,165,250,0.07); }
+    .proj-table tbody td:first-child { color: var(--accent); font-weight: 750; }
+    .proj-table a { color: var(--accent-2); font-weight: 700; }
+    .helper { margin: 6px 0 0; font-size: 13px; color: var(--muted); }
+    .info--full-width { grid-column: 1 / -1; }
+    @media (min-width: 780px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+    .footer {
+      margin-top: 16px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    @media (max-width: 780px) {
+      .header { grid-template-columns: 1fr; }
+      .grid { grid-template-columns: 1fr; }
+      .photo { width: 120px; height: 120px; }
+    }
+  </style>
+</head>
+<body>
+<script>
+  // index_germ.html — защита загрузки для посетителей не из DE/AT/LI.
+  // sessionStorage.countryGuard используется, чтобы не дергать IP API на всякий релоад.
+  (function () {
+    if (window.location.pathname.indexOf('index_germ.html') === -1) return;
+    var guard = sessionStorage.getItem('countryGuard');
+    if (guard) return;
+    fetch('https://ipapi.co/json/', { signal: AbortSignal.timeout(3000) })
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        var c = (data && data.country) || '';
+        if (['DE', 'AT', 'LI'].includes(c)) {
+          sessionStorage.setItem('countryGuard', 'de');
+        } else {
+          sessionStorage.setItem('countryGuard', 'other');
+          window.location.replace('./index_world.html');
+        }
+      })
+      .catch(function () { /* геолокация не удалась — показываем страницу */ });
+  }());
+</script>
+  <div class="card">
+    <div class="header">
+      <img class="photo" src="Photo_01.jpg" alt="Photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+      <div class="photo photo--placeholder" style="display: none;">Photo</div>
+      <div>
+        <h1 class="title"><span class="dot"></span> Dmytro Dronov</h1>
+        <p class="subtitle">BIM Manager | Digital Building Manager</p>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="info">
+        <div class="label">Contact</div>
+        <div>Email: <a href="mailto:dronov.dmitry.bim@gmail.com">dronov.dmitry.bim@gmail.com</a></div>
+        <div>GitHub: <a href="https://github.com/dronov-dmitry">https://github.com/dronov-dmitry</a></div>
+      </div>
+
+      <div class="info">
+        <div class="label">Kompetenzen</div>
+        <ul class="list">
+          <li>MS Office (Excel, Word, Outlook) - Experte</li>
+          <li>Revit (14 Jahre) - Experte</li>
+          <li>Autocad (14 Jahre) - Experte</li>
+          <li>Navisworks (5 Jahre) - Experte</li>
+          <li>Python (10 Jahre)</li>
+          <li>C# (5 Jahre)</li>
+          <li>VBA (1 Jahr)</li>
+        </ul>
+      </div>
+
+      <div class="info info--full-width">
+        <div class="label">Open-Source-Projekte</div>
+        <p class="helper"></p>
+        <div class="table-wrap">
+          <table class="proj-table" id="projectTable">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Beschreibung</th>
+                <th>Technologie</th>
+                <th>Preis</th>
+                <th>GitHub</th>
+                <th>Service</th>
+                <th>Video</th>
+              </tr>
+            </thead>
+            <tbody id="projectBody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="info">
+        <div class="label">Professional Experience</div>
+        <ul class="list">
+          <li>Digital Building Manager, Germany (02/2025 - 09/2025)</li>
+          <li>BIM Manager, Turkey (09/2014 - 03/2022)</li>
+          <li>Architect, Ukraine, Dnipro (05/2006 - 03/2014)</li>
+        </ul>
+      </div>
+
+      <div class="info">
+        <div class="label">Education and Languages</div>
+        <ul class="list">
+          <li>MSc in Industrial and Civil Engineering, Lazaryan Institute of Railway Transport (2001-2006)</li>
+          <li>Ukrainian, Russian - Native</li>
+          <li>German - Intermediate (B1)</li>
+          <li>English - Proficient (B2)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer">
+      Place of birth: Dnipro, Ukraine | Marital status: Married, 2 children
+    </div>
+  </div>
+  <script src="settings.js"></script>
+  <script>
+  (() => {
+    var settings = window.CALCULATOR_SETTINGS || {};
+    var projects = settings.projectsDe || [];
+    if (!projects.length) return;
+
+    var $ = function (sel) { return document.querySelector(sel); };
+
+    var helperEl = document.querySelector('.helper');
+    if (projects.length === 1) {
+      if (helperEl) helperEl.textContent = '1 Open-Source-Projekt';
+    }
+
+    var tbody = $('#projectBody');
+    if (!tbody) return;
+
+    tbody.innerHTML = projects.map(function (p) {
+      var serviceCell = p.service
+        ? '<a href="' + p.service + '" target="_blank" rel="noopener">Live</a>'
+        : '–';
+      var videoCell = p.video
+        ? '<a href="' + p.video + '" target="_blank" rel="noopener">▶</a>'
+        : '–';
+      var techCell = p.tech || '–';
+      var prLinks = (p.prs || []).map(function (pr) {
+        var href = typeof pr === 'string' ? pr : pr.url;
+        var label = (typeof pr === 'string' ? 'PR' : pr.label) || 'PR';
+        return '<a href="' + href + '" target="_blank" rel="noopener">' + label + '</a>';
+      }).join(', ');
+      var githubCell = p.github
+        ? '<a href="' + p.github + '" target="_blank" rel="noopener">Code</a>'
+        : '';
+      if (prLinks) {
+        githubCell += (githubCell ? ' ' : '') + prLinks;
+      }
+      if (!githubCell) githubCell = '–';
+      return (
+        '<tr>' +
+          '<td>' + p.name + '</td>' +
+          '<td>' + p.description + '</td>' +
+          '<td>' + techCell + '</td>' +
+          '<td>' + p.price + '</td>' +
+          '<td>' + githubCell + '</td>' +
+          '<td>' + serviceCell + '</td>' +
+          '<td>' + videoCell + '</td>' +
+        '</tr>'
+      );
+    }).join('');
+  })();
+  </script>
+  </body>
+</html>
