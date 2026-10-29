@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="theme-color" content="#080d14" />
+  <title>Платные сервисы | Dmitry Dronov</title>
+  <meta name="description" content="Таблица платных веб-продуктов и сервисов из портфолио Dmitry Dronov." />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #f7fafc;
+      --muted: #a9b4c2;
+      --paper: #080d14;
+      --surface: #101823;
+      --surface-strong: #131d2a;
+      --line: rgba(226, 232, 240, 0.12);
+      --blue: #5b8cff;
+      --green: #45d483;
+      --radius: 8px;
+      --max: 1180px;
+      --font: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: var(--font);
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 16% 4%, rgba(91, 140, 255, 0.18), transparent 30rem),
+        radial-gradient(circle at 88% 18%, rgba(41, 199, 184, 0.12), transparent 28rem),
+        linear-gradient(180deg, #080d14 0%, #0b111a 48%, #090d13 100%);
+      letter-spacing: 0;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+
+    .container {
+      width: min(100% - 32px, var(--max));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid var(--line);
+      background: rgba(8, 13, 20, 0.82);
+      backdrop-filter: blur(18px);
+    }
+
+    .topbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 66px;
+      gap: 16px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+    }
+
+    .brand-mark {
+      display: grid;
+      width: 38px;
+      height: 38px;
+      place-items: center;
+      border-radius: var(--radius);
+      color: #fff;
+      background: linear-gradient(135deg, #1f2d42, var(--blue));
+      box-shadow: 0 12px 30px rgba(91, 140, 255, 0.24);
+      flex: 0 0 auto;
+    }
+
+    .back-link {
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .back-link:hover { color: var(--ink); }
+
+    .section {
+      padding: 34px 0;
+    }
+
+    @media (min-width: 860px) {
+      .section { padding: 52px 0; }
+    }
+
+    .section-heading {
+      display: grid;
+      gap: 10px;
+      margin-bottom: 22px;
+    }
+
+    .section-kicker {
+      margin: 0;
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(30px, 8vw, 56px);
+      line-height: 1.02;
+      letter-spacing: 0;
+    }
+
+    .section-text {
+      max-width: 690px;
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.58;
+    }
+
+    /* Table styles are injected by projects-table.js so that every page
+       shows the same table design from a single source. */
+
+    .footer {
+      border-top: 1px solid var(--line);
+      padding: 24px 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .footer a { color: var(--muted); }
+    .footer a:hover { color: var(--ink); }
+
+    .load-error {
+      margin: 0;
+      padding: 14px 16px;
+      border: 1px solid rgba(255, 120, 120, 0.35);
+      border-radius: var(--radius);
+      background: rgba(255, 120, 120, 0.08);
+      color: #ff9b9b;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="./index_world.html">
+        <span class="brand-mark">DD</span>
+        <span class="brand-name">Dmitry Dronov</span>
+      </a>
+      <a class="back-link" href="./index_world.html">&larr; Back to main</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Paid products</p>
+            <h1>Платные сервисы</h1>
+          </div>
+          <p class="section-text">
+            Таблица платных веб-продуктов и инструментов из портфолио —
+            с ценой, описанием и ссылками на сервис, исходный код и видео.
+          </p>
+        </div>
+
+        <!-- The table is built at runtime from settings.js (single source
+             of truth shared with index_world.html), see projects-table.js. -->
+        <div id="payProjectsTable"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>&copy; 2026 Dmitry Dronov</span>
+      <a href="mailto:dronov.dmitry.bim@gmail.com">dronov.dmitry.bim@gmail.com</a>
+    </div>
+  </footer>
+
+  <script src="settings.js"></script>
+  <script src="projects-table.js"></script>
+  <script>
+    // The table rows come from settings.js — edit prices there only.
+    if (typeof ProjectsTable === "undefined") {
+      // Without projects-table.js the table cannot be built: show a clear
+      // hint instead of silently rendering an empty page.
+      document.getElementById("payProjectsTable").innerHTML =
+        '<p class="load-error">Таблица не построена: не загрузился файл <code>projects-table.js</code>. ' +
+        "Проверьте, что он лежит рядом с <code>pay_table.html</code> и что страница открыта по новому адресу, " +
+        "затем обновите её (Ctrl+F5).</p>";
+    } else {
+      ProjectsTable.render("payProjectsTable", {
+        labels: {
+          name: "Название",
+          price: "Цена",
+          description: "Описание",
+          service: "Сервис",
+          github: "GitHub",
+          video: "Видео"
+        },
+        linkLabels: { open: "Открыть", code: "Репозиторий", video: "Видео" },
+        // This page lists paid products only (prices with $ or €).
+        filter: ProjectsTable.isPaid
+      });
+    }
+  </script>
+</body>
+</html>
